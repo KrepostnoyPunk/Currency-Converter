@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="currency-container">
+            <select id="currency-1">
+                <option value="CAD">CAD</option>
+                <option value="PLN">PLN</option>
+                <option value="EURO">EURO</option>
+                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
+                <option value="RUB" selected>RUB</option>
+                <option value="RSD">RSD</option>
+            </select>
+            <input type="number" id="worth-1" value="1" min="0">
+        </div>
+        <div class="currency-container">
+            <select id="currency-2">
+                    <option value="CAD">CAD</option>
+                    <option value="PLN">PLN</option>
+                    <option value="EURO" selected>EURO</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="RSD">RSD</option>
+            </select>
+            <input type="number" id="worth-2" disabled>
+        </div>
+        <p class="exchange" id="exchange">1 RUB = 0,010 EUR</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
